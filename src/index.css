@@ -1,13 +1,23 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url(../public/images/bgGame.png);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.flex {
+  position: relative;
+}
+.choosen::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  width: 0;
+  height: 0;
+  border-top: 20px solid rgb(45 212 191);
+  border-right: 20px solid transparent;
 }
